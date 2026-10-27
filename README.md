@@ -11,7 +11,7 @@ A web app for Sandy Plains youth softball coaches to instantly generate a battin
 - **Persistent Game Info** — date, team names, and field stay visible and editable on both the input and results screens, so a typo doesn't force a regenerate
 - **Click-to-swap** any two players in the batting lineup, or any two players in the same inning of the fielding grid
 - **Rule validation** with inline error messages — printing is blocked until all violations are resolved
-- **PDF export** opens in a new browser tab for printing or saving, with no browser headers or footers
+- **PDF export** opens in a new browser tab for printing or saving, with no browser headers or footers. The printout is black and white only, so it prints cleanly on any printer
 - **Last updated date and What's New** in each generator's footer, showing when it last changed and what's different
 - **Responsive design** — works on desktop, tablet, and mobile; on phones, only the fielding grid scrolls sideways, with its Position column pinned and an edge shadow showing when more innings are off-screen
 - No installation, no backend, no dependencies to install — just open `index.html`
@@ -131,6 +131,5 @@ With 10 or fewer players in 10U, every player fields a position every inning and
 | `8u/index.html` | 8U lineup generator |
 | `10u/index.html` | 10U lineup generator |
 | `8u/CHANGELOG.md`, `10u/CHANGELOG.md` | History of changes to each generator |
-| `assets/` | Logo used on the home page |
 
-Each generator is a single self-contained HTML file. All links between pages are relative, so the site works the same whether it's opened from a downloaded folder or hosted (for example on GitHub Pages).
+Every page, including the home page, is a single self-contained HTML file with nothing else to load. All links between pages are relative, so the site works the same whether it's opened from a downloaded folder or hosted (for example on GitHub Pages).
